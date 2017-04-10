@@ -1,0 +1,35 @@
+
+body{
+    display: table;
+}
+
+.main-container{
+    box-shadow: 0px 5px 20px #aaa;
+    -moz-box-shadow: 0px 5px 20px #aaa;
+    -webkit-box-shadow: 0px 5px 20px #aaa;
+    -o-box-shadow: 0px 5px 20px #aaa;
+    text-align: center;
+    padding: 45px;
+    height:450px;
+    display: table-cell;
+    position: absolute;
+    vertical-align: middle;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+.lead{
+    padding: 0 30px;
+    font-size: 16px;
+}
+
+.tweet-input{
+    margin: 70px 0 50px;
+}
+
+.tweet-url{
+    line-height: 30px;
+}
