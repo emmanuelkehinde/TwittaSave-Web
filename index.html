@@ -11,12 +11,12 @@
     <title>TwitterSave</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
 
@@ -30,20 +30,51 @@
 
 <body>
     <div class="row">
-        <div class="col-md-6 offset-md-3 main-container">
-            <h1>TwitterSave</h1>
-            <p class="lead">Download Twitter Videos and Gif directly to your device; simply insert the tweet url and click the Download Button.</p>
-            <!--<form action="" class="download-form">-->
-                <div class="form-group tweet-input">
-                    <input type="text" class="form-control tweet-url" placeholder="Tweet Url">
+        <div class="col-md-6 offset-md-3 m-container">
+            <div class="main-container">
+                <img src="img/profile.jpg" class="logo">
+                <h1>TwitterSave</h1>
+                <p class="lead">Download Twitter Videos and animated Gif directly to your device; simply insert the tweet url and click the Download Button.</p>
+                <form action="" class="download-form">
+                    <div class="form-group tweet-input">
+                        <input type="text" class="form-control tweet-url" placeholder="Tweet Url">
+                    </div>
+                    <button class="btn btn-lg btn-primary download" type="submit">Download &nbsp;<i class="fa fa-spinner fa-spin spin" hidden="true"></i></button>
+
+                    <div class="alert alert-warning text-xs-left noti" hidden="true" role="alert">
+                        <span class="fa fa-warning" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span>
+                        <span id="noti-text">Unable to fetch tweet, check your internet connection.</span>
+                        <!--<button type="button" class="close pull-right" aria-label="Close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>-->
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="row download-cont">
+                <div class="col-xs-6 mobile-div">
+                    <a href="#">
+                        <span><i class="fa fa-mobile-phone fa-4x mobile"></i></span>
+                        <p>Download Mobile App</p>
+                    </a>
                 </div>
-                <button class="btn btn-lg btn-primary download">Download &nbsp;<i class="fa fa-spinner fa-spin spin "></i></button>
-            <!--</form>-->
+
+                <div class="col-xs-6 plugin-div">
+                    <a href="#">
+                        <span><i class="fa fa-chrome fa-3x plugin"></i></span>
+                        <p>Install Chrome Extension</p>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="footer">
+                Built with <span> &#9829;</span> by <a href="https://emmanuelkehinde.github.io" target="_blank">Emmanuel Kehinde</a>
+            </div>
         </div>
 
-        <a href="" class="document" hidden></a>
-
     </div>
+
 
 
 
@@ -51,13 +82,13 @@
     <script type="text/javascript"
         src="lib/jquery-3.1.1.min.js"></script>
 
-
-    <script type="text/javascript" src="lib/tether.min.js"></script>
+    <!-- <script type="text/javascript" src="lib/tether.min.js"></script> -->
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="lib/bootstrap.min.js"></script> -->
 
     <script type="text/javascript" src="lib/codebird.js"></script>
 
+    <script src="https://use.fontawesome.com/4f88d872f8.js"></script>
 
     <script type="text/javascript" src="js/app.js"></script>
 
