@@ -4,7 +4,7 @@ $(function () {
 
     var fetched=false;
     var cb = new Codebird;
-    cb.setConsumerKey("QYaPv9WJcuWDDggISaFwqYomC", "mhOqMLBKtK6Z7AhEFOuHd3cFWMB9KbSbe5fUKTu1LoyHaCkPsn");
+    cb.setConsumerKey("[KEY]", "[SECRET]");
 
 
     $(".download-form").submit(function (e) {
