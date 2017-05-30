@@ -4,7 +4,7 @@ $(function () {
 
     var fetched=false;
     var cb = new Codebird;
-    cb.setConsumerKey("REMOVED_SECRET", "REMOVED_SECRET");
+    cb.setConsumerKey("[KEY]", "[SECRET]");
 
 
     $(".download-form").submit(function (e) {
