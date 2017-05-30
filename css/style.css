@@ -1,7 +1,7 @@
 
 body{
     display: table;
-    background: url("../img/geometry.png") repeat-x;
+    /*background: url("../img/geometry.png") repeat-x;*/
     font-family: 'Lato', sans-serif;
 }
 
@@ -29,10 +29,9 @@ body{
     background: #ffffff;
 }
 .logo{
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
     margin-bottom: 5px;
-    border-radius: 30px;
 }
 
 .lead{
@@ -41,7 +40,7 @@ body{
 }
 
 .tweet-input{
-    margin: 65px 0 40px;
+    margin: 55px 0 40px;
 }
 
 .tweet-url{
