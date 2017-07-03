@@ -35,12 +35,22 @@ body{
 }
 
 .lead{
-    padding: 0 30px;
+    padding: 0 28px;
     font-size: 18px;
 }
 
+.help{
+    margin: -10px;
+    padding: 0;
+}
+
+#help_{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
 .tweet-input{
-    margin: 55px 0 40px;
+    margin: 45px 0 35px;
 }
 
 .tweet-url{
