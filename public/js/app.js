@@ -8,7 +8,7 @@ $(function () {
 
     var fetched=false;
     var cb = new Codebird;
-    cb.setConsumerKey("REMOVED_SECRET", "REMOVED_SECRET");
+    cb.setConsumerKey("KEY", "SECRET");
     // var key = encodeURIComponent("REMOVED_SECRET");
     // var secret = encodeURIComponent("REMOVED_SECRET");
     // var concat=key+":"+secret;
