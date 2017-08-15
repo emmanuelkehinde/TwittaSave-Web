@@ -1,6 +1,6 @@
-# TwitterSave
+# TwittaSave
 
-## (TwitterSave app implementation for web.)
+## (TwittaSave app implementation for web.)
 
 ## Download Twitter Videos and Gifs directly to your device (PC or Mobile). 
 
