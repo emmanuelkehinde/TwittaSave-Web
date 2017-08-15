@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TwittaSave</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/4.1.3/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/4.1.3/firebase-messaging.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+    <!--&lt;!&ndash; update the version number as needed &ndash;&gt;-->
+    <!--<script defer src="/__/firebase/4.1.3/firebase-app.js"></script>-->
+    <!--&lt;!&ndash; include only the Firebase features as you need &ndash;&gt;-->
+    <!--<script defer src="/__/firebase/4.1.3/firebase-messaging.js"></script>-->
+    <!--&lt;!&ndash; initialize the SDK after all desired features are loaded &ndash;&gt;-->
+    <!--<script defer src="/__/firebase/init.js"></script>-->
 
 
     <!-- Bootstrap core CSS -->
@@ -88,28 +88,28 @@
 
     </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <!--<script>-->
+      <!--document.addEventListener('DOMContentLoaded', function() {-->
+        <!--// // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥-->
+        <!--// // The Firebase SDK is initialized and available here!-->
+        <!--//-->
+        <!--// firebase.auth().onAuthStateChanged(user => { });-->
+        <!--// firebase.database().ref('/path/to/ref').on('value', snapshot => { });-->
+        <!--// firebase.messaging().requestPermission().then(() => { });-->
+        <!--// firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });-->
+        <!--//-->
+        <!--// // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥-->
 
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+        <!--try {-->
+          <!--let app = firebase.app();-->
+          <!--let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');-->
+          <!--document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;-->
+        <!--} catch (e) {-->
+          <!--console.error(e);-->
+          <!--document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';-->
+        <!--}-->
+      <!--});-->
+    <!--</script>-->
 
      <script type="text/javascript" src="lib/jquery-3.1.1.min.js"></script>
  
