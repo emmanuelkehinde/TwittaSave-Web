@@ -8,9 +8,8 @@ $(function () {
 
     var fetched=false;
     var cb = new Codebird;
+
     cb.setConsumerKey("KEY", "SECRET");
-
-
     $(".download-form").submit(function (e) {
 
         e.preventDefault();
@@ -60,7 +59,6 @@ $(function () {
             null, // no callback needed, we have the promise
             true // app-only auth
         ).then(function (data) {
-        		console.log(data);
                 var i=0;
                 var video_url;
                 if (data.reply.extended_entities==null && data.reply.entities.media==null){
@@ -94,7 +92,6 @@ $(function () {
                     console.log(err);
                 });
     }
-
 
     function download(video_url) {
 
