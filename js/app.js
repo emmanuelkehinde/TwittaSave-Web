@@ -8,8 +8,8 @@ $(function () {
 
     var fetched=false;
     var cb = new Codebird;
-    cb.setConsumerKey("[KEY]", "[SECRET]");
-    
+
+    cb.setConsumerKey("KEY", "SECRET");
     $(".download-form").submit(function (e) {
 
         e.preventDefault();
@@ -52,36 +52,6 @@ $(function () {
     }
 
     function getVideoUrl(s_url) {
-        // var url="https://api.twitter.com"+"/oauth2/token";
-        // var data={};
-        // // data.grant_type="client_credentials";
-        // $.ajax({
-        //     url: url,
-        //     type:"POST",
-        //     method:"POST",
-        //     dataType: "json",
-        //     crossDomain:true,
-        //     contentType: "application/x-www-form-urlencoded;charset=UTF-8",
-        //     // data: JSON.stringify(data),
-        //     cache: false,
-        //     xhrFields: {
-        //         withCredentials: false
-        //     },
-        //     beforeSend: function (xhr) {
-        //         /* Authorization header */
-        //         xhr.setRequestHeader("Authorization", "Basic " + encodedString);
-        //         // xhr.setRequestHeader("X-Mobile", "false");
-        //
-        //     },
-        //     success: function (data) {
-        //         console.log(data);
-        //         showSpin(false);
-        //     },
-        //     error: function (jqXHR, textStatus, errorThrown) {
-        //         console.log(errorThrown);
-        //         showSpin(false);
-        //     }
-        // });
 
         cb.__call(
             "statuses_show_ID",
