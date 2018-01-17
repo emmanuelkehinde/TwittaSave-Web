@@ -1,7 +1,6 @@
 
 body{
     display: table;
-    /*background: url("../img/geometry.png") repeat-x;*/
     font-family: 'Lato', sans-serif;
 }
 
@@ -87,10 +86,6 @@ body{
 }
 
 .footer{
-    /*position: relative;*/
-    /*left: 0;*/
-    /*right: 0;*/
-    /*bottom: 10px;*/
     margin: 0px auto 10px;
     font-size: 12px;
     text-align: center;
