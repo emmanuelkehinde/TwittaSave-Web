@@ -63,7 +63,7 @@ $(function () {
 
                 video_url = data.reply.extended_entities.media[0].video_info.variants[i].url;
 
-                while (!video_url.match(".mp4$")) {
+                while (!video_url.includes(".mp4")) {
                     video_url = data.reply.extended_entities.media[0].video_info.variants[i].url;
                     i = i + 1;
                 }
