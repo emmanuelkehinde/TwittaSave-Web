@@ -4,11 +4,36 @@
 
 ## (TwittaSave app implementation for web.)
 
-## Download Twitter Videos and Gifs directly to your device (PC or Mobile). 
+Download Twitter videos and GIFs directly to your device, on a PC or a phone.
+
+### Status
+
+Downloading doesn't work at the moment (#5). The app uses the Twitter API v1.1 `statuses/show` endpoint with app-only auth, which X no longer offers on its free access. See [ROADMAP.md](ROADMAP.md) for the plan to bring it back.
+
+### Who it's for
+
+Anyone who wants to save a video or GIF from a tweet without installing an app. It's the web version of TwittaSave, alongside the mobile apps and Chrome extension.
 
 ### How to use
 
 - Copy the link to the tweet (tweet url), paste it and tap the download button.
+
+### Built with
+
+- Plain HTML, CSS and JavaScript, with jQuery 3.1.1
+- [Bootstrap](https://getbootstrap.com/) and Tether for the layout
+- [Codebird](https://github.com/jublo/codebird-js) for calls to the Twitter API
+- Hosted on Firebase Hosting, which serves the Firebase scripts referenced in `index.html`
+
+### Running it locally
+
+1. Create an app on the [X Developer Portal](https://developer.x.com/) and get its consumer key and secret.
+2. In `js/app.js`, replace the `"KEY"` and `"SECRET"` placeholders in `cb.setConsumerKey(...)` with your own values. Don't commit them.
+3. Serve the folder with any static file server, for example `python3 -m http.server 8000`, then open http://localhost:8000.
+
+The Firebase scripts in `index.html` only load when the site is served by Firebase Hosting, so they'll fail locally. That doesn't affect the download form.
+
+Because this is a browser-only app, the key and secret are visible to anyone who opens the page. Moving the API calls to a small backend is on the [roadmap](ROADMAP.md).
 
 ### Other Distros:
 - Mobile: https://github.com/emmanuelkehinde/TwittaSave-Mobile
